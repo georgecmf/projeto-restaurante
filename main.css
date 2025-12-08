@@ -1,7 +1,8 @@
-    body {
-        font-family: Robobo, sans-serif;
-    }
+body {
+    font-family: Roboto, sans-serif;
+}
 
+/* Navbar */
 .navbar {
     background-color: #e15f41;
 }
@@ -18,17 +19,18 @@
     color: #fff;
 }
 
-
 .navbar-toggler {
     background-color: #ffeae6;
 }
 
+/* Títulos */
 .section-title {
     font-family: Pacifico, cursive;
 }
 
-
-#sobre-o-restaurante, #cardapio {
+/* Seções */
+#sobre-o-restaurante,
+#cardapio {
     background-color: #ffeae6;
 }
 
@@ -36,8 +38,9 @@
     color: #e15f41;
 }
 
+/* Cardápio */
 .nav-cardapio .nav-link.active,
-#fale-conosco button{
+#fale-conosco button {
     background-color: #e15f41;
     color: #fff;
 }
@@ -46,6 +49,7 @@
     color: #e15f41;
 }
 
+/* Social */
 .social-links li {
     list-style: none;
     display: inline;
@@ -55,8 +59,50 @@
     text-decoration: none;
 }
 
+/* ----------- MOBILE FIXES ------------ */
 @media (max-width: 767px) {
-    .corousel-item img {
-        height: 280px;
+
+    /* Ajuste do carrossel */
+    .carousel-item img {
+        height: 260px;
+        object-fit: cover;
+    }
+
+    /* Títulos mais equilibrados */
+    .section-title {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    /* Cards do cardápio */
+    #cardapio .nav-link {
+        text-align: center;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Ajuste do menu hambúrguer */
+    .navbar-collapse {
+        padding: 10px 0;
+    }
+
+    /* Ajustes gerais de espaçamento */
+    section {
+        padding: 30px 15px;
+    }
+
+    /* Imagens das seções */
+    #sobre-o-restaurante img,
+    #cardapio img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Botão do fale conosco */
+    #fale-conosco button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
     }
 }
